@@ -5,9 +5,6 @@ import (
 	"fmt"
 	"io"
 	"os"
-
-	"github.com/ReGYChang/irosh/shell"
-
 )
 
 var (

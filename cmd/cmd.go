@@ -3,7 +3,7 @@ package cmd
 import(
 	"errors"
 
-	"github.com/ReGYChang/irosh/meow"
+	// "github.com/ReGYChang/irosh/meow"
 )
 
 // Check verifies if a command is a builtin command
