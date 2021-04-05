@@ -39,7 +39,7 @@ func interpret() error {
 	// check if the command is a builtin command
 	fn, err := cmd.Check(argv)
 	if err == nil {
-		err = fn()
+		err = fn(argv)
 		return err
 	}
 
