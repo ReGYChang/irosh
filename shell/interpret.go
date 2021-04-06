@@ -13,7 +13,7 @@ import (
 func interpret() error {
 
 	// print the prompt
-	shellPrompt.Print()
+	promptPrint()
 
 	// read user input
 	input, err := readInput()

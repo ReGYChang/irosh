@@ -19,7 +19,7 @@ import (
 // }
 
 // Print prints the prompt before waiting for user input
-func (p *Prompt) Print() {
+func promptPrint() {
 	// 取得主機名稱
     host, _ := os.Hostname()  
 

@@ -9,7 +9,7 @@ import (
 
 var (
 	// shellPrompt contains what gets displayed each time the user is prompted for input
-	shellPrompt Prompt
+	//shellPrompt Prompt
 	// reader reads the user input
 	reader *bufio.Reader
 )
