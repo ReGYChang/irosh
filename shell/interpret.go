@@ -44,13 +44,13 @@ func interpret() error {
 	}
 
 	// otherwise, execute the command
-	cmd := exec.Command("bash", "-c", input)
+	command := exec.Command("bash", "-c", input)
 
-	cmd.Stdin = os.Stdin
-	cmd.Stdout = os.Stdout
-	cmd.Stderr = os.Stderr
+	command.Stdin = os.Stdin
+	command.Stdout = os.Stdout
+	command.Stderr = os.Stderr
 
-	return cmd.Run()
+	return command.Run()
 
 }
 

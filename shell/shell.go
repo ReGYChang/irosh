@@ -8,9 +8,6 @@ import (
 )
 
 var (
-	// shellPrompt contains what gets displayed each time the user is prompted for input
-	//shellPrompt Prompt
-	// reader reads the user input
 	reader *bufio.Reader
 )
 
@@ -35,6 +32,8 @@ func Run() {
 }
 
 func initialize() {
+	reader = bufio.NewReader(os.Stdin)
+
 	fmt.Println("               ....                          .... 	")
 	fmt.Println("              ..x....                      ....x.. 	")
 	fmt.Println("             ..xx......     ........     ......xx.. 	")
