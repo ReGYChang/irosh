@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"io"
 	"os"
+
+	"github.com/ReGYChang/irosh/cmd/meow"
 )
 
 var (
@@ -33,6 +35,7 @@ func Run() {
 
 func initialize() {
 	reader = bufio.NewReader(os.Stdin)
+	meow.Init()
 
 	fmt.Println("               ....                          .... 	")
 	fmt.Println("              ..x....                      ....x.. 	")
