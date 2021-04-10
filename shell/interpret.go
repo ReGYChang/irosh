@@ -2,12 +2,9 @@ package shell
 
 import (
 	"io"
-	"os"
-	"os/exec"
 	"strings"
 
 	"github.com/ReGYChang/irosh/cmd"
-
 )
 
 func interpret() error {
@@ -40,18 +37,8 @@ func interpret() error {
 	fn, err := cmd.Check(argv)
 	if err == nil {
 		err = fn(argv)
-		return err
 	}
-
-	// otherwise, execute the command
-	command := exec.Command("bash", "-c", input)
-
-	command.Stdin = os.Stdin
-	command.Stdout = os.Stdout
-	command.Stderr = os.Stderr
-
-	return command.Run()
-
+	return err
 }
 
 func readInput() (string, error) {
