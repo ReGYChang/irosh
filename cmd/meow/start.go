@@ -15,6 +15,23 @@ func start() error {
 
 	utils.PrintPb("Initializing process: ",100,100)
 	fmt.Println("meow: process initialization succeeded!")
+	fmt.Println("")
+
+	fmt.Println("-----BEGIN PGP SIGNED MESSAGE-----")
+	fmt.Println("Hash:SHA1")
+	fmt.Println("")
+	fmt.Println(`
+Hello Garra. Happy birthday to you.To celebrate,
+I have devised a test.
+
+There is a top secret file encrypted with AES256.
+You should pass the test and get the key. It will
+lead you on the road to solve the puzzle.
+
+Good luck, meow.
+
+Regy`)
+	fmt.Println("-----END PGP SIGNED MESSAGE-----")
 
 	return nil
 }

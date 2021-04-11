@@ -17,7 +17,7 @@ var (
 func MeowCheck(argv []string) error {
 	switch argv[1] {
 		default:
-			return errors.New("meow: '" + argv[1] + "' is not a meow command.\nSee 'meow --help'")
+			return errors.New("\nmeow: '" + argv[1] + "' is not a meow command.\nSee 'meow --help'\n")
 		case "start":
 			return start()
 		case "ps":
