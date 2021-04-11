@@ -11,7 +11,7 @@ type meowT struct {
 }
 
 var (
-	meow meowT
+	meow *meowT
 )
 
 func MeowCheck(argv []string) error {

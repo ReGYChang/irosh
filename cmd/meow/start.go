@@ -1,7 +1,7 @@
 package meow
 
 func start() error {
-	meow = meowT{}
+	meow = &meowT{}
 
 	meow.mDisc[0] = "this is first question"
 	meow.mDisc[1] = "this is second question"
