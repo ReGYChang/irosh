@@ -14,6 +14,6 @@ func Check(argv []string) (func([]string) error, error) {
 	case "exit":
 		return Exit, nil
 	default:
-		return nil, errors.New("-meow: " + argv[0] + ": command not found")
+		return nil, errors.New("-meow: '" + argv[0] + "': command not found")
 	}
 }
