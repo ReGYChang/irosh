@@ -9,7 +9,7 @@ import (
 
 )
 
-func PrintPb(pbName string, pbNum int) {
+func PrintPb(pbName string, pbNum int, pbDuratuon int) {
 	// create bars
 	meow := pb.New(100).Prefix(pbName + ": ")
 	// start pool
@@ -24,7 +24,7 @@ func PrintPb(pbName string, pbNum int) {
 		go func(cb *pb.ProgressBar) {
 			for n := 0; n < pbNum; n++ {
 				cb.Increment()
-				time.Sleep(time.Millisecond * time.Duration(rand.Intn(25)))
+				time.Sleep(time.Millisecond * time.Duration(rand.Intn(pbDuratuon)))
 			}
 			cb.Finish()
 			wg.Done()
