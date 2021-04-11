@@ -8,6 +8,5 @@ func help(argv []string) error{
 	fmt.Println("  start     start and initialize meow playground")
 	fmt.Println("  ps        list current mission progress")
 
-
 	return nil
 }

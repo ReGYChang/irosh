@@ -14,7 +14,7 @@ func start() error {
 	meow.mHint[1] = "this is second hint"
 
 	utils.PrintPb("Initializing process: ",100,100)
-	fmt.Print("meow: process initialization" + " succeeded[92mGreen[0m")
+	fmt.Println("meow: process initialization succeeded!")
 
 	return nil
 }
