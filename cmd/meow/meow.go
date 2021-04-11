@@ -6,6 +6,7 @@ import (
 
 type meowT struct {
 	mProgress [2]int
+	mName [2]string
 	mDisc [2]string
 	mHint [2]string
 }
