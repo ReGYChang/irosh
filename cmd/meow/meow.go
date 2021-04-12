@@ -23,6 +23,8 @@ func MeowCheck(argv []string) error {
 			return start()
 		case "ps":
 			return ps(argv)
+		case "dt":
+			return dt()
 		case "--help":
 			return help(argv)
 	}

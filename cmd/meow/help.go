@@ -3,12 +3,15 @@ package meow
 import "fmt"
 
 func help(argv []string) error{
-	fmt.Println("\nUsage:  meow COMMAND |<ARGS>|")
-	fmt.Println("")
-	fmt.Println("meow commands:")
-	fmt.Println("  start     start and initialize meow playground")
-	fmt.Println("  ps        list current mission progress")
-	fmt.Println("")
+	fmt.Println(`
+Usage:  meow COMMAND |<ARGS>|
+
+meow commands:
+  start     start and initialize meow playground
+  ps        list current mission progress
+
+ `)
+	fmt.Println("\\033[32m大家好\\033[0m")
 
 	return nil
 }
