@@ -10,7 +10,7 @@ import (
 
 func dt(argv []string) error{
 	err := ps(argv)
-	if err != nil{
+	if err == nil{
 		reader := bufio.NewReader(os.Stdin)
 		fmt.Printf("\nThe current progress is <%s>\n",meow.mName[meow.mCurrent])
 
