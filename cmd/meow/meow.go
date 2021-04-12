@@ -9,6 +9,8 @@ type meowT struct {
 	mName [2]string
 	mDisc [2]string
 	mHint [2]string
+	mKey  [2]string
+	mCurrent int
 }
 
 var (
@@ -24,7 +26,7 @@ func MeowCheck(argv []string) error {
 		case "ps":
 			return ps(argv)
 		case "dt":
-			return dt()
+			return dt(argv)
 		case "--help":
 			return help(argv)
 	}

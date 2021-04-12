@@ -8,12 +8,15 @@ import (
 func start() error {
 	meow = &meowT{}
 
-	meow.mName[0] = "MEOW"
+	meow.mName[0] = "  MEOW"
 	meow.mName[1] = "CAESAR"
 	meow.mDisc[0] = "this is first question"
 	meow.mDisc[1] = "this is second question"
 	meow.mHint[0] = "this is first hint"
 	meow.mHint[1] = "this is second hint"
+	meow.mKey[0] = "meow"
+	meow.mKey[1] = "caesar"
+	meow.mCurrent = 0
 
 	utils.PrintPb("Initializing process",100,100)
 	fmt.Println("meow:process initialization succeeded!")

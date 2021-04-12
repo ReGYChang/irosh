@@ -9,9 +9,8 @@ Usage:  meow COMMAND |<ARGS>|
 meow commands:
   start     start and initialize meow playground
   ps        list current mission progress
+  dt        key in all the keys to decrypt the top secret file
 
  `)
-	fmt.Println("\\033[32m大家好\\033[0m")
-
 	return nil
 }
