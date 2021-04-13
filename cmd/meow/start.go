@@ -8,7 +8,7 @@ import (
 func start() error {
 	meow = &meowT{}
 
-	meow.mName[0] = "  MEOW"
+	meow.mName[0] = "MEOW  "
 	meow.mName[1] = "CAESAR"
 	meow.mDisc[0] = "this is first question"
 	meow.mDisc[1] = "this is second question"

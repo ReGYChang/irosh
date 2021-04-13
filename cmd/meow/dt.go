@@ -12,7 +12,7 @@ func dt(argv []string) error{
 	err := ps(argv)
 	if err == nil{
 		reader := bufio.NewReader(os.Stdin)
-		fmt.Printf("\nThe current progress is <%s>\n",meow.mName[meow.mCurrent])
+		fmt.Printf("\nThe current progress: %s\n",meow.mName[meow.mCurrent])
 
 		for {
 			fmt.Print("> ")
@@ -25,7 +25,7 @@ func dt(argv []string) error{
 				fmt.Fprintln(os.Stderr, err)
 			}else{
 				meow.mCurrent++
-				if meow.mCurrent == 3{
+				if meow.mCurrent == 2{
 					fmt.Println("Congrats to get all of keys!")
 					os.Exit(0)
 				}
@@ -39,6 +39,8 @@ func dt(argv []string) error{
 
 func keyIn(key string) error{
 	key = strings.TrimSuffix(key, "\n" )
+	fmt.Println(key)
+	fmt.Println(meow.mKey[meow.mCurrent])
 	if key != meow.mKey[meow.mCurrent]{
 		return errors.New("\nkey incorrect!\n")
 	}
