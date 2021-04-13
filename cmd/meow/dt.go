@@ -38,9 +38,7 @@ func dt(argv []string) error{
 }
 
 func keyIn(key string) error{
-	key = strings.TrimSuffix(key, "\n" )
-	fmt.Println(key)
-	fmt.Println(meow.mKey[meow.mCurrent])
+	key = strings.TrimRight(key, "\r\n")
 	if key != meow.mKey[meow.mCurrent]{
 		return errors.New("\nkey incorrect!\n")
 	}
