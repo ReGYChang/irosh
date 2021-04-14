@@ -21,6 +21,7 @@ func dt(argv []string) error{
 		}
 		if meow.mCurrent == 2 {
 			fmt.Print("\nCongrats to get all of keys! You just decrypted the top secret file, Hurry go have a look!!\n")
+			return nil
 		}
 	}
 	return ps(argv[:2])
