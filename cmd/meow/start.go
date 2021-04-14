@@ -12,8 +12,9 @@ func start() error {
 	}else{
 		meow = &meowT{}
 
-		meow.mName[0] = "MEOW  "
-		meow.mName[1] = "CAESAR"
+		meow.mName[0] = "MISSION 1"
+		meow.mName[1] = "MISSION 2"
+		meow.mName[2] = "FINISHED"
 		meow.mDisc[0] = `
 Meow. You have done well.
 There is a box is placed
@@ -35,9 +36,10 @@ Finally, don't forget to
 decrypt the file for you, meow.
 Regy
 `
+		meow.mDisc[2] = "FINISHED"
 		meow.mHint[0] = "this is first hint"
 		meow.mHint[1] = "this is second hint"
-		meow.mHint[2] = "there is no anything~"
+		meow.mHint[2] = "FINISHED"
 		meow.mKey[0] = "meow"
 		meow.mKey[1] = "861115"
 		meow.mCurrent = 0

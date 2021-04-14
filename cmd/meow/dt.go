@@ -6,7 +6,6 @@ import (
 )
 
 func dt(argv []string) error{
-	var err error
 	if len(argv) < 3{
 		return errors.New("\nmissing operand after 'dt'\n")
 	}else{
@@ -18,13 +17,11 @@ func dt(argv []string) error{
 			meow.mProgress[1] = 100
 			meow.mCurrent++
 		default:
-			err = errors.New("\nAuthentication failed, please verify your key.\n")
+			return errors.New("\nAuthentication failed, please verify your key.\n")
 		}
 		if meow.mCurrent == 2 {
-			fmt.Println("Congrats to get all of keys! You just decrypted the top secret file, Hurry go have a look!!")
+			fmt.Print("\nCongrats to get all of keys! You just decrypted the top secret file, Hurry go have a look!!\n")
 		}
 	}
-	err = ps(argv[:2])
-
-	return err
+	return ps(argv[:2])
 }
