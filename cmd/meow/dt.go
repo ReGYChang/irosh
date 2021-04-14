@@ -13,16 +13,17 @@ func dt(argv []string) error{
 		case "meow":
 			meow.mProgress[0] = 100
 			meow.mCurrent++
+			fmt.Println(meow.mDisc[0])
 		case "861115":
 			meow.mProgress[1] = 100
 			meow.mCurrent++
+			fmt.Println(meow.mDisc[1])
 		default:
 			return errors.New("\nAuthentication failed, please verify your key.\n")
 		}
 		if meow.mCurrent == 2 {
 			fmt.Print("\nCongrats to get all of keys! You just decrypted the top secret file, Hurry go have a look!!\n")
-			return nil
 		}
 	}
-	return ps(argv[:2])
+	return nil
 }
