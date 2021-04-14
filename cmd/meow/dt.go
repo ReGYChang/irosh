@@ -6,7 +6,10 @@ import (
 )
 
 func dt(argv []string) error{
-	err := ps(argv)
+	err := ps(argv[:2])
+	if len(argv) < 3{
+		return errors.New("\nmissing operand after 'dt'")
+	}
 	if err == nil{
 		fmt.Printf("\nThe current progress: %s\n",meow.mName[meow.mCurrent])
 		switch argv[2]{
