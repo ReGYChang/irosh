@@ -43,8 +43,8 @@ decrypt the file for you, meow.
 Regy
 `
 		meow.mDisc[2] = "FINISHED"
-		meow.mHint[0] = "this is first hint"
-		meow.mHint[1] = "this is second hint"
+		meow.mHint[0] = "Just press meow into prompt (do not forget to meow dt <ARGS>)"
+		meow.mHint[1] = "keeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
 		meow.mHint[2] = "FINISHED"
 		meow.mKey[0] = "meow"
 		meow.mKey[1] = "861115"

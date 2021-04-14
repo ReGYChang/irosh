@@ -22,7 +22,7 @@ func dt(argv []string) error{
 			return errors.New("\nAuthentication failed, please verify your key.\n")
 		}
 		if meow.mCurrent == 2 {
-			fmt.Print("\nCongrats to get all of keys! You just decrypted the top secret file, Hurry go have a look!!\n")
+			fmt.Print("\n<--Congrats to get all of keys! You just decrypted the top secret file, Hurry go have a look!!-->\n")
 		}
 	}
 	return nil
