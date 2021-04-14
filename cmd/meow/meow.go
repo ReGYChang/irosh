@@ -8,7 +8,7 @@ type meowT struct {
 	mProgress [2]int
 	mName [2]string
 	mDisc [2]string
-	mHint [2]string
+	mHint [3]string
 	mKey  [2]string
 	mCurrent int
 }
@@ -29,6 +29,8 @@ func MeowCheck(argv []string) error {
 		return dt(argv)
 	case "show":
 		return show()
+	case "hint":
+		return hint()
 	case "--help":
 		return help(argv)
 	}
