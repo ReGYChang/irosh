@@ -6,12 +6,10 @@ import (
 )
 
 func dt(argv []string) error{
-	err := ps(argv[:2])
+	var err error
 	if len(argv) < 3{
-		return errors.New("\nmissing operand after 'dt'")
-	}
-	if err == nil{
-		fmt.Printf("\nThe current progress: %s\n",meow.mName[meow.mCurrent])
+		return errors.New("\nmissing operand after 'dt'\n")
+	}else{
 		switch argv[2]{
 		case "meow":
 			meow.mProgress[0] = 100
@@ -26,5 +24,7 @@ func dt(argv []string) error{
 			fmt.Println("Congrats to get all of keys! You just decrypted the top secret file, Hurry go have a look!!")
 		}
 	}
+	err = ps(argv[:2])
+
 	return err
 }

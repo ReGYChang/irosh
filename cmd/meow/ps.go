@@ -2,6 +2,7 @@ package meow
 
 import (
 	"errors"
+	"fmt"
 	"github.com/ReGYChang/irosh/utils"
 )
 
@@ -11,6 +12,7 @@ func ps(argv []string) error {
 	}else if len(argv) == 2 {
 		utils.PrintPb(meow.mName[0],meow.mProgress[0],25)
 		utils.PrintPb(meow.mName[1],meow.mProgress[1],25)
+		fmt.Printf("\nThe current progress: %s\n",meow.mName[meow.mCurrent])
 	}else{
 		return errors.New("\nmeow: meow ps accepts no arguments.\nSee 'meow --help.'\n")
 	}

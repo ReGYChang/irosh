@@ -8,7 +8,7 @@ import (
 
 func start() error {
 	if meow != nil{
-		return errors.New("\nmeow has already been initiated!")
+		return errors.New("\nmeow has already been initiated")
 	}else{
 		meow = &meowT{}
 
