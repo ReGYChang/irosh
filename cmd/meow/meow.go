@@ -28,7 +28,7 @@ func MeowCheck(argv []string) error {
 	case "dt":
 		return dt(argv)
 	case "show":
-		return show()
+		return Show()
 	case "hint":
 		return hint()
 	case "--help":
