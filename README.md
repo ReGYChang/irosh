@@ -48,8 +48,20 @@ Wishing you happiness today, tomorrow, and always!
 
 
 # Documentation
+```
+Usage:  meow COMMAND |<ARGS>|
 
+meow commands:
+  start     start and initialize meow playground
+  ps        list current mission progress
+  dt        key in all the keys to decrypt the top secret file
+  hint      you will get some hints about the keys
+  show      show the top secret file
+```
 # Installation
+- Click right side Release Tag [v0.0.1](https://github.com/ReGYChang/irosh/releases/tag/v0.0.1) and
+- Download `irosh` binary file
+- Meow
 
 # TO GARRA
 > Thanks for being there for me
