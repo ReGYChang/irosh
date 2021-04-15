@@ -13,8 +13,6 @@ func Check(argv []string) (func([]string) error, error) {
 		return meow.MeowCheck, nil
 	case "exit":
 		return Exit, nil
-	case "show":
-		return meow.Show,nil
 	default:
 		return nil, errors.New("\n-meow: '" + argv[0] + "': command not found\n")
 	}
